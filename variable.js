@@ -1,21 +1,33 @@
-// Variable tempat/wadah yang memiliki nama untuk menyimpan sebuah nilai
-// deklarasi, inisialisasi, assignment
-// DEKLARASI mendaftarkan variable ke dalam lingkup yang sesuai
-// INISIALISASI menyediakan memori untuk variable
-// ASSIGNMENT menetapkan nilai yang spesifik ke dalam variable
+// ===============================
+// VARIABLE
+// Variable = tempat/wadah yang memiliki nama untuk menyimpan sebuah nilai
+// ===============================
 
-var x;          // var = deklarasi, x = inisialisasi
-    x = 10;     // assignment
+// Konsep Dasar:
+// 1. DEKLARASI   → mendaftarkan variable ke dalam lingkup (scope) yang sesuai
+// 2. INISIALISASI → menyediakan memori untuk variable
+// 3. ASSIGNMENT  → memberikan nilai spesifik ke variable
 
-//deklarasi variable antaranya = var, let, const
+// Contoh dasar:
+var x;      // deklarasi & inisialisasi (nilai default: undefined)
+x = 10;     // assignment (memberikan nilai 10 ke x)
 
-var a = 2;
-let b = 3;
-const c = 4;
+// Cara deklarasi variable:
+var a = 2;      // bisa di-redeclare & diubah nilainya
+let b = 3;      // tidak bisa di-redeclare dalam block yang sama, tapi nilainya bisa diubah
+const c = 4;    // tidak bisa di-redeclare dan nilainya tidak bisa diubah (konstanta)
 
-//membuat banyak variable dalam satu program bisa menggunakan shorthand
+// Shorthand (deklarasi banyak variable dalam 1 baris):
 var namaMaulanaRifai = "hobi",
     kegiatan = "sepakbola",
-    kesibukan = "belajar"; //shorthan hanya menambahkan , (koma)
+    kesibukan = "belajar"; // cukup pisahkan dengan koma
 
-console.log(namaMaulanaRifai,kegiatan,kesibukan)
+// Menampilkan nilai variable:
+console.log(namaMaulanaRifai, kegiatan, kesibukan);
+
+// ===============================
+// Catatan:
+// - Gunakan `let` untuk variable yang bisa berubah.
+// - Gunakan `const` untuk nilai tetap.
+// - `var` jarang dipakai di modern JS karena hoisting dan scope yang membingungkan.
+// ===============================

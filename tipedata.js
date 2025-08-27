@@ -1,35 +1,68 @@
-//Tipe data
+// =========================
+// TIPE DATA JAVASCRIPT
+// =========================
 
-string = "aku" //menyimpan data dengan menggunakan tandan "",'',``
+// 1. String
+// Digunakan untuk menyimpan data teks (plain text)
+let nama = "Maulana Rifai";
+let kalimat = 'Hari ini Maulana belajar JavaScript';
+let template = `Nama saya adalah ${nama}`; // pakai backtick untuk interpolasi
 
-//number Deklarasi number
-let bilBulat = 42;        // integer
-let bilDesimal = 3.14;    // floating-point
-let negatif = -17;        // bilangan negatif
-let eksponensial = 2e5;   // 200000 (notasi eksponensial)
+// Escape Character pada String:
+console.log("Halo\nDunia");    // \n = baris baru
+console.log("Halo\tDunia");    // \t = tab
+console.log("Halo\'Dunia");    // \' = tanda petik satu
+console.log("Halo\"Dunia");    // \" = tanda petik dua
+console.log("Halo\\Dunia");    // \\ = backslash
 
-boolean = true/false        // logika kondisi
-array = ["apel", "Pisang"] //untuk menyimpan daftar nilai
-object = {nama:"Buah", alat:"Pisau"} //untuk menyimpan data komplek
-//null = null                            // kosong sengaja
-//undefined                               //belum ada nilai
-Symbol = Symbol("id")                   //indetifier unik
-bigInt = 123456789n                     //untuk menyimpan angka secara besar
+// Properti String:
+console.log(nama.length); // Menghitung jumlah karakter
 
-//string digunakan untuk merepresentasikan data textual/plain tex
-//tulis string dengan menggunakan tanda '', "",``
 
-let nama = "Maulana Rifai".length
-let event = "dihari jum'at Maulana akan senam"
-//Escape character string
-// \0 untuk menghasilkan null
-// \' hasil '
-// \" hasil "
-// \\ hasil \
-// \n hasil new line
-// \t hasil tab
-// \b hasil backspace
-// /0xxx hasil unicode
-// .length unutuk mengidentifikasi jumlah karakter yang ada di dalam nilai
+// 2. Number
+// Tipe data untuk angka (bilangan bulat atau desimal)
+let bilBulat = 42;          // Integer
+let bilDesimal = 3.14;      // Floating-point
+let negatif = -17;          // Bilangan negatif
+let eksponensial = 2e5;     // 200000 (notasi eksponensial)
 
-//Boolean ()
+
+// 3. Boolean
+// Nilai logika: true (benar) atau false (salah)
+let benar = true;
+let salah = false;
+
+
+// 4. Array
+// Digunakan untuk menyimpan daftar/sekumpulan nilai
+let buah = ["Apel", "Pisang", "Jeruk"];
+
+
+// 5. Object
+// Digunakan untuk menyimpan data kompleks dengan pasangan key-value
+let barang = {
+  nama: "Pisau",
+  jenis: "Dapur",
+  stok: 10
+};
+
+
+// 6. Null
+// Nilai kosong yang diset secara sengaja
+let kosong = null;
+
+
+// 7. Undefined
+// Variabel yang dideklarasikan tapi belum diberi nilai
+let belumDiisi;
+console.log(belumDiisi); // undefined
+
+
+// 8. Symbol
+// Identifier unik (biasanya untuk object keys)
+let id = Symbol("id");
+
+
+// 9. BigInt
+// Untuk menyimpan angka yang sangat besar
+let angkaBesar = 12345678901234567890n;
