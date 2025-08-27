@@ -36,8 +36,11 @@ while (nilaiA <=5){
     nilaiA++;
 }
 //tugas bisnis angkot dari Sandhika Galih
+//perbaikan kode agar lebih rapi dari kode sebelumnya
+
+let jumlahAngkot = 15;
 let bisnisAngkot= 1;
-while (bisnisAngkot <= 10){
+while (bisnisAngkot <= jumlahAngkot){
     console.log("Agkot No."+ " "+bisnisAngkot+" "+ "beroperasi dengan baik.")
     bisnisAngkot++;
 }
