@@ -3,7 +3,7 @@
 //for digunakan ketika kita sudah mengetahui jumlah pengulangan
 //sedangkan while digunakan ketika kita belum mengetahui jumlah pengulangan
 //struktur for
-/*for (inisialisasi = 1; let kondisi terminasi; increment/dekrement){
+/*for (inisialisasi = 1; kondisi terminasi; increment/dekrement){
     aksi
 }*/
 

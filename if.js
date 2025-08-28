@@ -11,7 +11,7 @@ if (angka % 2 == 0){
     alert(angka +" "+" bilangan ganjil")
 }
 
-//latihan if else
+//latihan if else dari sandhika galih juragan angkot
 let jumlahAngkot =10;
 let angkotBeroperasi =6;
 let noAngkot =1;
