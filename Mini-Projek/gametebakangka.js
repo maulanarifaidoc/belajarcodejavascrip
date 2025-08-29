@@ -10,18 +10,18 @@ let angkarahasia = Math.floor(Math.random() * max) + 1;
 let tebakan = prompt("masukkan angka 1-10");
 let kesempatan = 3;
 
-for(i = tebakan; i <= angkarahasia; i++){
-    if(tebakan == angkarahasia){
-        alert("Selamat tebakan anda benar");
+for(kesempatan; kesempatan > 0; kesempatan--){
+    if (tebakan == angkarahasia){
+        alert("selamat tebakan anda benar");
         break;
     } else if (tebakan > angkarahasia){
-        alert("tebakan anda terlalu besar, coba " + kesempatan-- +" x lagi");
-        tebakan = prompt("masukkan angka 1-10 lagi");
+        alert(`tebakan anda terlalu besar coba ${kesempatan } x lagi`);
+        tebakan = prompt("masukkan angka 1-10");
     } else if (tebakan < angkarahasia){
-        alert("tebakan anda terlalu kecil, coba " + kesempatan-- +" x lagi");
-        tebakan = prompt("masukkan angka 1-10 lagi");
-    } else if (kesempatan-- == 0){
-        alert("kesempatan anda sudah habis, Coba Lagi");
-        break;
+        alert("tebakan anda terlalu kecil");
+        tebakan = prompt("masukkan angka 1-10");
+    } 
+    if (kesempatan == 1){
+        alert("maaf kesempatan anda sudah habis, angka yang benar adalah " + angkarahasia);
     }
 }
