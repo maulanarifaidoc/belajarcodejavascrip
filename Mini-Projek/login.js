@@ -18,4 +18,4 @@ if (cek == true){
 } else{
     alert("username arau password salah")
 } 
-//Teliti penggunaan operator nya!!
+//permasalahan gagal di penggunaan operator, maka selajutnya teliti penggunaan operator dengan benar!!
