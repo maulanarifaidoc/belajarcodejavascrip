@@ -11,16 +11,16 @@ if (kodisi1){
 
 //tugas latihan if else dari sandhika galih juragan angkot
 
-let jumlahAngkot =10;
-let angkotBeroperasi =6;
-let noAngkot =1;
+let jumlahAngkot = 10;
+let angkotBeroperasi = 6;
+let noAngkot = 1;
 
 for (noAngkot;noAngkot <= jumlahAngkot; noAngkot++){
-    if (noAngkot <= angkotBeroperasi){
+    if (noAngkot <= 6 && noAngkot !== 5){
         console.log(`Nomor Angkot ${noAngkot} beroperasi dengan baik`);
-    } else if (noAngkot == 8){
+    } else if (noAngkot === 8 || noAngkot === 10 || noAngkot === 5){
         console.log(`Nomor Angkot ${noAngkot} sedang Lembur`);
-    } else { (noAngkot <= jumlahAngkot);
+    } else {
         console.log(`Nomor Angkot ${noAngkot} sedang tidak beroperasi`);
     }
 }
