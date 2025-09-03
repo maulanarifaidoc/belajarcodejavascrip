@@ -1,31 +1,39 @@
-/*Kalkulator Diskon (Discount Calculator) sederhana
-Konsep: if-else
-Ide Fitur:
-Input harga barang & diskon.
-Hitung harga setelah diskon.
-Validasi biar diskon nggak lebih dari 100%.*/
+// Kalkulator Diskon Sederhana
+alert("Barang tersedia: laptop, mouse, cooler");
 
-let namabarang = alert(`barang tersedia: laptop, mouse,, cooler`),
-     pilih = alert("Tulis barang yang kamu inginkan: laptop, mouse, cooler"),
-     barang = prompt("")
-     jumlah = prompt("masukkan jumlah yang ingin anda beli"),
-     diskon = 20 / 100,
-     hargalaptop= 5.000,
-     hargamouse= 750,
-     hargacooler = 800;
-     barang = barang.toLowerCase()
+// Input
+let barang = prompt("Tulis barang yang kamu inginkan: laptop, mouse, cooler").toLowerCase();
+let jumlah = parseInt(prompt("Masukkan jumlah yang ingin anda beli:"));
+let diskon = 20; // Diskon 20%
 
-if (barang === "laptop"){
-    harga = (hargalaptop * jumlah)* diskon;
-    alert(`Anda harus membayar sejumlah Rp. ${harga}.000.000`)
-} else if (barang === "mouse"){
-    harga = (hargamouse * jumlah)* diskon;
-    alert (`anda harus membayar sejumlah Rp. ${harga}.000`)
-} else if (barang === "cooler"){
-    harga = (hargacooler * jumlah)* diskon;
-    alert(`anda harus membayar sejumlah Rp. ${harga}.000`)
+// Harga barang (dalam rupiah)
+let hargaLaptop = 5000000;
+let hargaMouse = 75000;
+let hargaCooler = 80000;
+
+let hargaBarang = 0;
+
+// Validasi diskon
+if (diskon > 100) {
+  alert("Diskon tidak boleh lebih dari 100%!");
 } else {
-    alert("Barang habis")
-} 
+  if (barang === "laptop") {
+    hargaBarang = hargaLaptop;
+  } else if (barang === "mouse") {
+    hargaBarang = hargaMouse;
+  } else if (barang === "cooler") {
+    hargaBarang = hargaCooler;
+  } else {
+    alert("Barang tidak tersedia");
+  }
 
-//masih belum sempurna
+  if (hargaBarang > 0) {
+    let totalHarga = hargaBarang * jumlah;
+    let potongan = totalHarga * (diskon / 100);
+    let hargaAkhir = totalHarga - potongan;
+
+    alert(`Anda membeli ${jumlah} ${barang}.\nHarga total setelah diskon ${diskon}%: Rp${hargaAkhir.toLocaleString()}`);
+  }
+}
+
+
