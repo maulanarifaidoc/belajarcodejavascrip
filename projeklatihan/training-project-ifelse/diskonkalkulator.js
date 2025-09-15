@@ -14,12 +14,10 @@ if (jumlahBuku > 0 && jumlahBuku <=5){
     totalHarga = hargaSatuan * jumlahBuku;
     potongan = totalHarga * (10 / 100)
     hargaAkhir = totalHarga - potongan;
-} else if (jumlahBuku > 10 && jumlahBuku < 100){
+} else {
     totalHarga = hargaSatuan * jumlahBuku;
     potongan = totalHarga * (20 / 100);
     hargaAkhir = totalHarga - potongan;
-} else {
-    alert(`Anda mendapatkam bonus 1 buku`)
 }
 
 alert(`Total harga setelah dikskon adalah Rp.${hargaAkhir}`)
